@@ -402,6 +402,11 @@ body {
   color: var(--primary);
 }
 
+/* creator */
+.creator p span {
+  color: #fff;
+}
+
 /* Footer */
 footer {
   background-color: var(--primary);
