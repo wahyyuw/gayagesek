@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaya Gesek</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Matematika -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+        svg: {
+          fontCache: "global",
+        },
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 1000, // durasi animasi
+          once: false, // animasi hanya sekali
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><span>Fisika </span>Dasar</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#materi">Materi</a>
+        <a href="#calculator">Kalkulator</a>
+        <a href="#contoh-soal">Contoh Soal</a>
+        <a href="#creator">Creator</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form end -->
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <div class="mask-container">
+        <main class="content">
+          <h1>Koefisien Gaya <span>Gesek</span></h1>
+          <p>
+            Saat kamu menarik almari, kenapa rasanya berat di awal tapi jadi
+            lebih ringan setelah bergerak?
+          </p>
+        </main>
+      </div>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- Materi Section start -->
+    <section id="materi" class="materi">
+      <h2><span>Apa itu</span> Gaya Gesek?</h2>
+      <div class="row">
+        <div class="materi-img">
+          <img
+            src="img/materi.gif"
+            alt="Materi"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+        <div class="content">
+          <h3>Gaya Gesek</h3>
+          <p>
+            Gaya gesek adalah gaya yang timbul ketika dua permukaan bersentuhan
+            dan salah satunya berusaha atau sedang bergerak terhadap yang lain.
+            Gaya ini bekerja melawan arah gerak relatif benda dan memiliki peran
+            penting dalam kehidupan sehari-hari, seperti berjalan, mengerem
+            kendaraan, atau menahan benda agar tidak meluncur.
+          </p>
+          <p>
+            Rumus umum gaya gesek: $f = \mu \times N$, di mana:
+            <br />
+            - $f$: gaya gesek (N)
+            <br />
+            - $\mu$: koefisien gesek (tanpa satuan)
+            <br />
+            - $N$: gaya normal (N)
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Materi Section end -->
+
+    <!-- Macam Section start -->
+    <section id="macam" class="macam">
+      <h2>Macam-macam <span>Gaya Gesek</span></h2>
+      <p>
+        Gaya gesek Statis dibagi menjadi dua jenis. Gaya gesek statis dan gaya
+        gesek kinetik.
+      </p>
+      <div class="macam-content">
+        <div class="macam-text">
+          <h3><span>Gaya Gesek</span> Statis</h3>
+          <p class="gesek-statis">
+            <strong>Gaya gesek statis</strong> adalah gaya gesek yang bekerja
+            pada benda yang belum bergerak, meskipun ada gaya luar yang mencoba
+            menggerakkannya. Gaya ini dapat menyesuaikan diri hingga batas
+            maksimum tertentu agar benda tetap diam. <br /><br />
+            <strong>Rumus:</strong> $f_s \leq \mu_s \times N$
+            <br />
+            - $f_s$: gaya gesek statis (N)
+            <br />
+            - $\mu_s$: koefisien gesek statis
+            <br />
+            - $N$: gaya normal (N)
+          </p>
+
+          <h3><span>Gaya Gesek</span> Statis pada Bidang Miring</h3>
+          <p class="gesek-statis">
+            Untuk benda diam di bidang miring dengan sudut kemiringan $\alpha$:
+            <br />
+            <strong>Rumus:</strong> $f_s \leq \mu_s \times m \times g \times
+            \cos(\alpha)$
+          </p>
+
+          <h3><span>Gaya Gesek</span> Kinetik</h3>
+          <p class="gesek-kinetik">
+            <strong>Gaya gesek kinetik</strong> adalah gaya gesek yang bekerja
+            pada benda yang sedang bergerak. Umumnya, gaya gesek ini lebih kecil
+            dari gaya gesek statis maksimum karena kontak antara permukaan
+            berubah saat gerakan terjadi. <br /><br />
+            <strong>Rumus:</strong> $f_k = \mu_k \times N$
+            <br />
+            - $f_k$: gaya gesek kinetik (N)
+            <br />
+            - $\mu_k$: koefisien gesek kinetik
+            <br />
+            - $N$: gaya normal (N)
+          </p>
+
+          <h3><span>Gaya Gesek</span> Kinetik pada Bidang Miring</h3>
+          <p class="gesek-kinetik">
+            Jika benda bergerak di bidang miring bersudut $\alpha$:
+            <br />
+            <strong>Rumus:</strong> $f_k = \mu_k \times m \times g \times
+            \cos(\alpha)$
+          </p>
+        </div>
+
+        <div class="macam-image">
+          <img src="img/bola.gif" alt="Ilustrasi" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Macam Section end -->
+
+    <!-- Koefisien Section start -->
+    <section class="koefisien" id="koefisien">
+      <h2>Koefisien <span>Gaya Gesek</span></h2>
+      <p class="koefisien-isi">
+        <strong>Koefisien gaya gesek</strong> adalah bilangan tanpa satuan yang
+        menunjukkan tingkat kekasaran atau kelicinan dua permukaan yang
+        bersentuhan. <br /><br />
+        Nilai koefisien ini dinotasikan dengan simbol:
+        <br />
+        - $\mu_s$ : koefisien gesek statis (untuk benda diam)<br />
+        - $\mu_k$ : koefisien gesek kinetik (untuk benda yang bergerak)<br /><br />
+
+        Semakin besar nilai $\mu$, berarti permukaan semakin kasar, sehingga
+        gaya gesek yang dihasilkan semakin besar. Sebaliknya, semakin kecil
+        nilai $\mu$, maka permukaannya semakin licin.
+        <br /><br />
+        Secara umum, berlaku:
+        <strong>$\mu_s > \mu_k$</strong>
+        <br /><br />
+        <strong>Contoh nilai koefisien gaya gesek:</strong><br />
+        - Es di atas es: 0,03<br />
+        - Kayu di atas kayu: 0,4 – 0,6<br />
+        - Karet di atas beton kering: 1,0<br />
+        - Karet di atas es: 0,15<br />
+        - Baja di atas baja: 0,6<br />
+      </p>
+    </section>
+    <!-- Koefisien Section end -->
+
+    <!-- Calculator Section Start -->
+    <section class="calculator" id="calculator">
+      <h2><span>Kalkulator Koefisien</span> Gaya Gesek</h2>
+      <form class="calculator" onsubmit="event.preventDefault(); hitung();">
+        <div class="form-group">
+          <label for="surface">Jenis Permukaan:</label>
+          <select id="surface" onchange="updateForm()">
+            <option value="datar">Datar</option>
+            <option value="miring">Miring</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mode">Jenis Perhitungan:</label>
+          <select id="mode" onchange="updateForm()">
+            <option value="koefisien">Hitung Koefisien Gesek</option>
+            <option value="gaya">Hitung Gaya Gesek</option>
+          </select>
+        </div>
+
+        <div id="inputs"></div>
+
+        <button type="submit">Hitung</button>
+
+        <div id="hasil"></div>
+      </form>
+    </section>
+
+    <!-- Calculator Section End -->
+
+    <!-- Contoh Soal Section Start -->
+    <section class="contoh-soal" id="contoh-soal">
+      <h2><span>Contoh Soal</span> dan Pembahasan</h2>
+
+      <!-- Soal 1 -->
+      <div class="soal">
+        <h3>
+          <span>Soal 1:</span> <br />
+          Gaya Gesek Statis
+        </h3>
+        <p>
+          Sebuah kotak bermassa 10 kg diletakkan di lantai datar. Jika koefisien
+          gesek statis antara kotak dan lantai adalah 0,4, berapakah besar gaya
+          dorong minimum yang diperlukan agar kotak mulai bergerak?
+        </p>
+        <h4>Pembahasan:</h4>
+        <p>
+          Diketahui:<br />
+          - $m = 10\,kg$<br />
+          - $\mu_s = 0{,}4$<br />
+          - $g = 10\,m/s^2$<br /><br />
+
+          Gaya normal, $N = m \times g = 10 \times 10 = 100\,N$<br />
+          Gaya gesek statis maksimum:<br />
+          $f_s^{\text{maks}} = \mu_s \times N = 0{,}4 \times 100 = 40\,N$<br /><br />
+          Jadi, gaya dorong minimum agar kotak mulai bergerak adalah
+          <strong>40 N</strong>.
+        </p>
+      </div>
+
+      <!-- Soal 2 -->
+      <div class="soal">
+        <h3>
+          <span>Soal 2:</span><br />
+          Gaya Gesek Kinetik
+        </h3>
+        <p>
+          Sebuah benda bermassa 5 kg ditarik di atas bidang datar dengan gaya
+          konstan sehingga benda bergerak. Jika koefisien gesek kinetik antara
+          benda dan bidang adalah 0,2, hitung besar gaya gesek yang bekerja pada
+          benda tersebut!
+        </p>
+        <h4>Pembahasan:</h4>
+        <p>
+          Diketahui:<br />
+          - $m = 5\,kg$<br />
+          - $\mu_k = 0{,}2$<br />
+          - $g = 10\,m/s^2$<br /><br />
+
+          Gaya normal, $N = m \times g = 5 \times 10 = 50\,N$<br />
+          Gaya gesek kinetik:<br />
+          $f_k = \mu_k \times N = 0{,}2 \times 50 = 10\,N$<br /><br />
+          Jadi, besar gaya gesek kinetik adalah <strong>10 N</strong>.
+        </p>
+      </div>
+      <!-- Soal 3 -->
+      <div class="soal">
+        <h3>
+          <span>Soal 3: </span><br />
+          Gaya Gesek Statis di Bidang Miring
+        </h3>
+        <p>
+          Sebuah benda bermassa 2 kg diam di bidang miring dengan sudut
+          kemiringan $30^\circ$. Jika koefisien gesek statis antara benda dan
+          bidang adalah 0,5, apakah benda akan tetap diam atau meluncur?
+        </p>
+        <h4>Pembahasan:</h4>
+        <p>
+          Diketahui:<br />
+          - $m = 2\,kg$<br />
+          - $\mu_s = 0{,}5$<br />
+          - $\alpha = 30^\circ$<br />
+          - $g = 10\,m/s^2$<br /><br />
+
+          Komponen gaya berat sejajar bidang: $w_{\parallel} = m \cdot g \cdot
+          \sin(\alpha) = 2 \cdot 10 \cdot \sin(30^\circ) = 20 \cdot 0{,}5 =
+          10\,N$<br />
+          Gaya normal: $N = m \cdot g \cdot \cos(\alpha) = 2 \cdot 10 \cdot
+          \cos(30^\circ) = 20 \cdot 0{,}866 \approx 17{,}32\,N$<br />
+          Gaya gesek statis maksimum: $f_s^{\text{maks}} = \mu_s \cdot N = 0{,}5
+          \cdot 17{,}32 \approx 8{,}66\,N$<br /><br />
+          Karena $w_{\parallel} = 10\,N > f_s^{\text{maks}} = 8{,}66\,N$, maka
+          benda akan <strong>meluncur</strong>.
+        </p>
+      </div>
+
+      <!-- Soal 4 -->
+      <div class="soal">
+        <h3>
+          <span>Soal 4: </span><br />
+          Gaya Gesek Kinetik di Bidang Miring
+        </h3>
+        <p>
+          Sebuah balok 4 kg meluncur turun pada bidang miring dengan sudut
+          kemiringan $37^\circ$. Jika koefisien gesek kinetik adalah 0,2, berapa
+          besar gaya gesek yang bekerja pada balok?
+        </p>
+        <h4>Pembahasan:</h4>
+        <p>
+          Diketahui:<br />
+          - $m = 4\,kg$<br />
+          - $\mu_k = 0{,}2$<br />
+          - $\alpha = 37^\circ$<br />
+          - $g = 10\,m/s^2$<br /><br />
+
+          Gaya normal: $N = m \cdot g \cdot \cos(\alpha) = 4 \cdot 10 \cdot
+          \cos(37^\circ) = 40 \cdot 0{,}798 \approx 31{,}92\,N$<br />
+          Gaya gesek kinetik: $f_k = \mu_k \cdot N = 0{,}2 \cdot 31{,}92 \approx
+          6{,}38\,N$<br /><br />
+          Jadi, besar gaya gesek kinetik adalah <strong>sekitar 6,38 N</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contoh Soal Section End -->
+
+    <!-- Creator Section start -->
+    <section id="creator" class="creator">
+      <h2><span>Tentang</span> Pembuat</h2>
+      <p>
+        Website ini dibuat sebagai bagian dari tugas akhir Mata Kuliah Fisika
+        Dasar untuk memenuhi salah satu penilaian pembuatan media pembelajaran.
+        <br /><br />
+
+        Pengembang website: <br />
+        Wahyu Wijayanto <br />
+        (NIM: 24051030035) <br /><br />
+        Deri Aditya Romadhan <br />
+        (NIM: 24051030033) <br /><br />
+        Mahasiswa Program Studi Teknik Elektro, Departemen Teknik Elektro,
+        Fakultas Teknik Universitas Negeri Yogyakarta.
+      </p>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#materi">Materi</a>
+        <a href="#calculator">Kalkulator</a>
+        <a href="#contoh-soal">Contoh Soal</a>
+        <a href="#creator">Creator</a>
+      </div>
+
+      <div class="credit">
+        <p>Designed by <a href="">wahyuwijayanto</a>. | &copy; 2025.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
